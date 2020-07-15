@@ -6,8 +6,8 @@ import (
 
 	"google.golang.org/grpc"
 
-	"github.com/EDDYCJY/go-grpc-example/pkg/gtls"
-	pb "github.com/EDDYCJY/go-grpc-example/proto"
+	"github.com/go-grpc-example/pkg/gtls"
+	pb "github.com/go-grpc-example/proto"
 )
 
 const PORT = "9004"
@@ -36,7 +36,7 @@ func main() {
 	}
 
 	auth := Auth{
-		AppKey:    "eddycjy",
+		AppKey:    "Vegard-Bear",
 		AppSecret: "20181005",
 	}
 	conn, err := grpc.Dial(":"+PORT, grpc.WithTransportCredentials(c), grpc.WithPerRPCCredentials(&auth))

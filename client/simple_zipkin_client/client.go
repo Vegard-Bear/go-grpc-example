@@ -8,8 +8,8 @@ import (
 	zipkin "github.com/openzipkin/zipkin-go-opentracing"
 	"google.golang.org/grpc"
 
-	"github.com/EDDYCJY/go-grpc-example/pkg/gtls"
-	pb "github.com/EDDYCJY/go-grpc-example/proto"
+	"github.com/go-grpc-example/pkg/gtls"
+	pb "github.com/go-grpc-example/proto"
 )
 
 const (

@@ -6,8 +6,8 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/EDDYCJY/go-grpc-example/pkg/gtls"
-	pb "github.com/EDDYCJY/go-grpc-example/proto"
+	"github.com/go-grpc-example/pkg/gtls"
+	pb "github.com/go-grpc-example/proto"
 
 	"google.golang.org/grpc"
 )
@@ -56,7 +56,7 @@ func main() {
 func GetHTTPServeMux() *http.ServeMux {
 	mux := http.NewServeMux()
 	mux.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
-		w.Write([]byte("eddycjy: go-grpc-example"))
+		w.Write([]byte("Vegard-Bear: go-grpc-example"))
 	})
 
 	return mux

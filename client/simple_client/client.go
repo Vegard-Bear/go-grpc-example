@@ -7,8 +7,8 @@ import (
 
 	"google.golang.org/grpc"
 
-	"github.com/EDDYCJY/go-grpc-example/pkg/gtls"
-	pb "github.com/EDDYCJY/go-grpc-example/proto"
+	"github.com/go-grpc-example/pkg/gtls"
+	pb "github.com/go-grpc-example/proto"
 
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"

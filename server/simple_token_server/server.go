@@ -10,8 +10,8 @@ import (
 	"google.golang.org/grpc/metadata"
 	"google.golang.org/grpc/status"
 
-	"github.com/EDDYCJY/go-grpc-example/pkg/gtls"
-	pb "github.com/EDDYCJY/go-grpc-example/proto"
+	"github.com/go-grpc-example/pkg/gtls"
+	pb "github.com/go-grpc-example/proto"
 )
 
 type SearchService struct {
@@ -81,7 +81,7 @@ func (a *Auth) Check(ctx context.Context) error {
 }
 
 func (a *Auth) GetAppKey() string {
-	return "eddycjy"
+	return "Vegard-Bear"
 }
 
 func (a *Auth) GetAppSecret() string {
