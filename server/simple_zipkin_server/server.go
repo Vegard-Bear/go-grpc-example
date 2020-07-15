@@ -44,9 +44,9 @@ func main() {
 	}
 
 	tlsServer := gtls.Server{
-		CaFile:   "../../conf/ca.pem",
-		CertFile: "../../conf/server/server.pem",
-		KeyFile:  "../../conf/server/server.key",
+		CaFile:   "/Users/xiongweigang/go/src/github.com/go-grpc-example/conf/ca.pem",
+		CertFile: "/Users/xiongweigang/go/src/github.com/go-grpc-example/conf/server/server.pem",
+		KeyFile:  "/Users/xiongweigang/go/src/github.com/go-grpc-example/conf/server/server.key",
 	}
 	c, err := tlsServer.GetCredentialsByCA()
 	if err != nil {

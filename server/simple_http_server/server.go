@@ -21,8 +21,8 @@ func (s *SearchService) Search(ctx context.Context, r *pb.SearchRequest) (*pb.Se
 const PORT = "9003"
 
 func main() {
-	certFile := "../../conf/server/server.pem"
-	keyFile := "../../conf/server/server.key"
+	certFile := "/Users/xiongweigang/go/src/github.com/go-grpc-example/conf/server/server.pem"
+	keyFile := "/Users/xiongweigang/go/src/github.com/go-grpc-example/conf/server/server.key"
 	tlsServer := gtls.Server{
 		CertFile: certFile,
 		KeyFile:  keyFile,

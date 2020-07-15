@@ -19,9 +19,9 @@ const PORT = "9001"
 func main() {
 	tlsClient := gtls.Client{
 		ServerName: "go-grpc-example",
-		CaFile:     "../../conf/ca.pem",
-		CertFile:   "../../conf/client/client.pem",
-		KeyFile:    "../../conf/client/client.key",
+		CaFile:     "/Users/xiongweigang/go/src/github.com/go-grpc-example/conf/ca.pem",
+		CertFile:   "/Users/xiongweigang/go/src/github.com/go-grpc-example/conf/client/client.pem",
+		KeyFile:    "/Users/xiongweigang/go/src/github.com/go-grpc-example/conf/client/client.key",
 	}
 
 	c, err := tlsClient.GetCredentialsByCA()
